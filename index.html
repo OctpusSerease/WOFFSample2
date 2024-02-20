@@ -158,7 +158,7 @@
         function scanQRCode() {
             woff.scanQR()
                 .then((result) => {
-                   // document.getElementById("qrResult").innerHTML = "Scanned Info: " + result.value;
+                    document.getElementById("qrResult").innerHTML = result.value;
                     document.getElementById("sendQRDataBtn").style.display = "block";
                 })
                 .catch((err) => {
